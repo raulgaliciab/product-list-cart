@@ -34,4 +34,41 @@ h1 {
   font-weight: bold;
   line-height: 120%;
   letter-spacing: 0;
+  color: var(--rose-900);
+}
+
+/* Product Item */
+
+.product-item {
+  width: 32.7rem;
+  height: 31.9rem;
+}
+
+.product-item img {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.product-item .category {
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: var(--rose-500);
+}
+
+.product-item h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: var(--rose-900);
+}
+
+.product-item .price {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: var(--main-red);
 }

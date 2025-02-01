@@ -3,7 +3,7 @@ export const ProductItem = ({ img, category, name, price }) => {
 
   return (
 
-    <div>
+    <div className="product-item">
 
       <img src={img} alt={name} />
 
@@ -13,9 +13,9 @@ export const ProductItem = ({ img, category, name, price }) => {
         <button>+</button>
       </div>
 
-      <span>{ category }</span>
+      <span className="category">{ category }</span>
       <h2>{ name }</h2>
-      <span>{ price }</span>
+      <span className="price">{ `$${price}` }</span>
 
     </div>
   )
