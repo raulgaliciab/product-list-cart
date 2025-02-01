@@ -6,7 +6,7 @@ export const App = () => {
 
 
   return (
-    <>
+    <main>
       <h1>Desserts</h1>
 
       {
@@ -19,6 +19,6 @@ export const App = () => {
           />
         ))
       }
-    </>
+    </main>
   )
 }

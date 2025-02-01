@@ -1,0 +1,37 @@
+/* Variables */
+
+:root {
+  --main-red: #C73B0F;
+  --main-green: #1EA575;
+  --main-black: #000000;
+  --main-white: #FFFFFF;
+  --rose-900: #260F08;
+  --rose-500: #87635A;
+  --rose-400: #AD8A85;
+  --rose-300: #CAAFA7;
+  --rose-100: #F5EEEC;
+  --rose-50: #FCF8F6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Red Hat Text', serif;
+}
+
+main {
+  padding: 2.4rem;
+}
+
+h1 {
+  margin-bottom: 3.2rem;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 120%;
+  letter-spacing: 0;
+}
