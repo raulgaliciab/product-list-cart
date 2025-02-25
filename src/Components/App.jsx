@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-key */
-import data from '../../data.json';
+import data from '../assets/data.json';
 import { ProductItem } from './ProductItem';
 
 export const App = () => {
@@ -12,10 +12,10 @@ export const App = () => {
       {
         data.map( item => (
           <ProductItem
-            img={`src${item.image.mobile.replace('./', '/')}`}
-            category={item.category}
-            name={item.name}
-            price={item.price}
+            img={ item.image.mobile }
+            category={ item.category }
+            name={ item.name }
+            price={ item.price }
           />
         ))
       }
