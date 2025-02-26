@@ -1,8 +1,13 @@
+import { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
+
 /* eslint-disable react/prop-types */
 export const ProductItem = ({ item }) => {
 
   const { image, category, name, price } = item;
   const imgURL = image.mobile;
+
+  const { increaseItem, decreaseItem } = useContext(CartContext);
 
   return (
 
@@ -10,10 +15,18 @@ export const ProductItem = ({ item }) => {
 
       <img src={`src/${imgURL}`} alt={name} />
 
-      <div>
-        <button>-</button>
+      <div className='active-button'>
+        <button
+          className='minus'
+          onClick={ () => decreaseItem(item)}
+        >
+        </button>
         <span>1</span>
-        <button>+</button>
+        <button
+          className='plus'
+          onClick={ () => increaseItem(item) }
+        >
+        </button>
       </div>
 
       <span className="category">{ category }</span>

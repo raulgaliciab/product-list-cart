@@ -74,6 +74,46 @@ h1 {
   color: var(--main-red);
 }
 
+/* Product Item Button */
+
+.active-button {
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 16rem;
+  height: 4.4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: var(--main-white);
+  background-color: var(--main-red);
+  border: none;
+  border-radius: 999rem;
+}
+
+.active-button button {
+  width: 2rem;
+  height: 2rem;
+  background-color: inherit;
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  outline: none;
+  border: 2px solid var(--main-white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.minus {
+  background-image: url('../assets/images/icon-decrement-quantity.svg');
+}
+
+.plus {
+  background-image: url('../assets/images/icon-increment-quantity.svg');
+}
+
 /* Cart */
 
 .cart {

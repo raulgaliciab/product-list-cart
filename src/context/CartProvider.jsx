@@ -8,12 +8,12 @@ export const CartProvider = ({ children }) => {
 
   const increaseItem = ( item ) => {
     // Missing logic
-    setCartState(item)
+    console.log("+1", item);
   }
 
   const decreaseItem = ( item ) => {
     // Missing logic
-    setCartState(item)
+    console.log("-1", item);
   }
 
   return (
