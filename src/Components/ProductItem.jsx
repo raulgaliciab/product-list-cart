@@ -1,11 +1,14 @@
 /* eslint-disable react/prop-types */
-export const ProductItem = ({ img, category, name, price }) => {
+export const ProductItem = ({ item }) => {
+
+  const { image, category, name, price } = item;
+  const imgURL = image.mobile;
 
   return (
 
     <div className="product-item">
 
-      <img src={`src/${img}`} alt={name} />
+      <img src={`src/${imgURL}`} alt={name} />
 
       <div>
         <button>-</button>

@@ -1,4 +1,5 @@
 export const Cart = () => {
+
   return (
     <section className="cart">
       <h2>Your Cart (0)</h2>
