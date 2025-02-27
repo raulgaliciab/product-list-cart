@@ -38,11 +38,16 @@ h1 {
   color: var(--rose-900);
 }
 
+.items-container {
+  justify-items: center;
+}
+
 /* Product Item */
 
 .product-item {
-  width: 32.7rem;
-  height: 31.9rem;
+  width: 100%;
+  min-height: 31.9rem;
+  margin-bottom: 2.4rem;
 }
 
 .product-item img {
@@ -77,6 +82,9 @@ h1 {
 /* Product Item Button */
 
 .active-button {
+  position: relative;
+  top: -2.2rem;
+  left: calc(50% - 8rem);
   display: flex;
   padding: 0 1rem;
   justify-content: space-between;

@@ -7,8 +7,10 @@ export const ProductItem = ({ item }) => {
   const { image, category, name, price } = item;
   const imgURL = image.mobile;
 
+  // Cart Context
   const { cartState, increaseItem, decreaseItem } = useContext(CartContext);
 
+  // Item quantity in Cart
   const cartItem = cartState.find( (element) => element.id === item.id );
   const itemQuantity = (cartItem) ? cartItem.quantity : 0;
 

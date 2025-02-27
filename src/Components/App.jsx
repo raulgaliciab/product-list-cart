@@ -14,14 +14,16 @@ export const App = () => {
 
         <Cart />
 
-        {
-          data.map( item => (
-            <ProductItem
-              key={ item.id }
-              item={ item }
-            />
-          ))
-        }
+        <section className='items-container'>
+          {
+            data.map( item => (
+              <ProductItem
+                key={ item.id }
+                item={ item }
+              />
+            ))
+          }
+        </section>
       </main>
     </CartProvider>
   )
