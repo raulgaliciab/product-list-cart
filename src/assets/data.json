@@ -8,7 +8,8 @@
        },
        "name": "Waffle with Berries",
        "category": "Waffle",
-       "price": 6.50
+       "price": 6.50,
+       "id": "6aa5607e-8442-4c35-9ba5-e00277002cca"
     },
     {
         "image": {
@@ -19,7 +20,8 @@
         },
         "name": "Vanilla Bean Crème Brûlée",
         "category": "Crème Brûlée",
-        "price": 7.00
+        "price": 7.00,
+        "id": "d9fc5cce-447a-4b97-878b-7cb159340b18"
      },
      {
         "image": {
@@ -30,7 +32,8 @@
         },
         "name": "Macaron Mix of Five",
         "category": "Macaron",
-        "price": 8.00
+        "price": 8.00,
+        "id": "1af4be8a-5734-409e-b10c-4f38dd20ddbe"
      },
      {
         "image": {
@@ -41,7 +44,8 @@
         },
         "name": "Classic Tiramisu",
         "category": "Tiramisu",
-        "price": 5.50
+        "price": 5.50,
+        "id": "85e287fe-363a-4fe6-a329-90538fa1942d"
      },
      {
         "image": {
@@ -52,7 +56,8 @@
         },
         "name": "Pistachio Baklava",
         "category": "Baklava",
-        "price": 4.00
+        "price": 4.00,
+        "id": "44cb4801-00b4-4470-8143-b340f7965f13"
      },
      {
         "image": {
@@ -63,7 +68,8 @@
         },
         "name": "Lemon Meringue Pie",
         "category": "Pie",
-        "price": 5.00
+        "price": 5.00,
+        "id": "66e23bc7-0ae8-4107-b191-099fb47fe982"
      },
      {
         "image": {
@@ -74,7 +80,8 @@
         },
         "name": "Red Velvet Cake",
         "category": "Cake",
-        "price": 4.50
+        "price": 4.50,
+        "id": "cfdcd385-a638-451d-bdaa-30d9fa8a4c6f"
      },
      {
         "image": {
@@ -85,7 +92,8 @@
         },
         "name": "Salted Caramel Brownie",
         "category": "Brownie",
-        "price": 4.50
+        "price": 4.50,
+        "id": "9c50bfa1-b7f9-4529-ba9d-5d2799f8944d"
      },
      {
         "image": {
@@ -96,6 +104,7 @@
         },
         "name": "Vanilla Panna Cotta",
         "category": "Panna Cotta",
-        "price": 6.50
+        "price": 6.50,
+        "id": "1d335c9f-f9a1-4a2e-97da-87b61f6f40b5"
      }
 ]

@@ -1,24 +1,28 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react';
+import { useReducer, useEffect } from 'react';
 import { CartContext } from './CartContext';
+import { cartReducer } from './CartReducer';
+
+const initialCartState = [];
 
 export const CartProvider = ({ children }) => {
-
-  const [ cartState, setCartState ] = useState([]);
+  const [ cartState, dispatch ] = useReducer( cartReducer, initialCartState);
 
   const increaseItem = ( item ) => {
-    // Missing logic
-    console.log("+1", item);
-  }
+    dispatch({ type: "ADD_ITEM", payload: item });
+  };
 
   const decreaseItem = ( item ) => {
-    // Missing logic
-    console.log("-1", item);
-  }
+    dispatch({ type: "REMOVE_ITEM", payload: item });
+  };
+
+  useEffect(() => {
+    console.log("Cart actualizado:", cartState);
+  }, [ cartState ]);
 
   return (
-    <CartContext.Provider value={ { cartState, increaseItem, decreaseItem } }>
+    <CartContext.Provider value={{ cartState, increaseItem, decreaseItem }}>
       { children }
     </CartContext.Provider>
-  )
-}
+  );
+};

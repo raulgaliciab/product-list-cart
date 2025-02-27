@@ -17,6 +17,7 @@ export const App = () => {
         {
           data.map( item => (
             <ProductItem
+              key={ item.id }
               item={ item }
             />
           ))
