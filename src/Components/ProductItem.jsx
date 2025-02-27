@@ -7,7 +7,10 @@ export const ProductItem = ({ item }) => {
   const { image, category, name, price } = item;
   const imgURL = image.mobile;
 
-  const { increaseItem, decreaseItem } = useContext(CartContext);
+  const { cartState, increaseItem, decreaseItem } = useContext(CartContext);
+
+  const cartItem = cartState.find( (element) => element.id === item.id );
+  const itemQuantity = (cartItem) ? cartItem.quantity : 0;
 
   return (
 
@@ -21,7 +24,7 @@ export const ProductItem = ({ item }) => {
           onClick={ () => decreaseItem(item)}
         >
         </button>
-        <span>1</span>
+        <span>{itemQuantity}</span>
         <button
           className='plus'
           onClick={ () => increaseItem(item) }
