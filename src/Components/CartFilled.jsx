@@ -5,6 +5,7 @@ import { CartItem } from './CartItem';
 export const CartFilled = () => {
 
   const { cartState } = useContext(CartContext);
+  const cartTotal = cartState.reduce( (acc, item) => acc + item.price * item.quantity, 0 ).toFixed(2);
 
   return (
     <section>
@@ -21,7 +22,7 @@ export const CartFilled = () => {
 
       <div className='order-total'>
         <p>Order Total</p>
-        <span>$46.50</span>
+        <span>${cartTotal}</span>
       </div>
 
       <div className='carbon-neutral'>
