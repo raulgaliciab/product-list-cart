@@ -15,7 +15,7 @@ export const Cart = () => {
         <figcaption>Your added items will appear here</figcaption>
       </figure>
 
-      <section className=''>
+      <section>
         <ul>
           {
             cartState.map( (cartItem) => (
