@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useReducer, useEffect } from 'react';
+import { useReducer } from 'react';
 import { CartContext } from './CartContext';
 import { cartReducer } from './CartReducer';
 
@@ -13,15 +13,16 @@ export const CartProvider = ({ children }) => {
   };
 
   const decreaseItem = ( item ) => {
-    dispatch({ type: "REMOVE_ITEM", payload: item });
+    dispatch({ type: "DECREASE_ITEM", payload: item });
   };
 
-  useEffect(() => {
-    console.log("Cart actualizado:", cartState);
-  }, [ cartState ]);
+  const removeItem = ( item ) => {
+    dispatch({ type: "REMOVE_ITEM", payload: item });
+  }
+
 
   return (
-    <CartContext.Provider value={{ cartState, increaseItem, decreaseItem }}>
+    <CartContext.Provider value={{ cartState, increaseItem, decreaseItem, removeItem }}>
       { children }
     </CartContext.Provider>
   );

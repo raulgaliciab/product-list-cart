@@ -1,6 +1,7 @@
 export const cartReducer = ( state, action ) => {
 
   switch (action.type) {
+
     case "ADD_ITEM": {
       const itemIndex = state.findIndex((cartItem) => cartItem.id === action.payload.id);
 
@@ -13,12 +14,16 @@ export const cartReducer = ( state, action ) => {
       }
     }
 
-    case "REMOVE_ITEM": {
+    case "DECREASE_ITEM": {
       return state
         .map((cartItem) =>
           cartItem.id === action.payload.id ? { ...cartItem, quantity: cartItem.quantity - 1 } : cartItem
         )
-        .filter((cartItem) => cartItem.quantity > 0); // Eliminar si cantidad llega a 0
+        .filter((cartItem) => cartItem.quantity > 0);
+    }
+
+    case "REMOVE_ITEM": {
+      return state.filter( (cartItem) => action.payload.id !== cartItem.id );
     }
 
     default:
