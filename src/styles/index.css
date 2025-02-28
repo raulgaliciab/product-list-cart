@@ -141,12 +141,14 @@ h1 {
 }
 
 .cart figure {
+  margin: 1.6rem 0;
   height: 100%;
   justify-self: center;
   justify-items: center;
 }
 
 .cart figure figcaption {
+  margin-top: 1.6rem;
   font: 1.4rem;
   font-weight: 600;
   line-height: 180%;
