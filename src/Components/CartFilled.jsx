@@ -18,17 +18,18 @@ export const CartFilled = () => {
           ))
         }
       </ul>
-      <div>
+
+      <div className='order-total'>
         <p>Order Total</p>
         <span>$46.50</span>
       </div>
 
-      <div>
-        <img src="../assets/images/icon-carbon-neutral.svg" alt="Carbon Neutral" />
-        <span>This a carbon-neutral delivery</span>
+      <div className='carbon-neutral'>
+        <img src="src/assets/images/icon-carbon-neutral.svg" alt="Carbon Neutral" />
+        <span>This a <b>carbon-neutral</b> delivery</span>
       </div>
 
-      <button>
+      <button className='confirm-order'>
         Confirm Order
       </button>
     </section>

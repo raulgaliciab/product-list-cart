@@ -214,3 +214,58 @@ h1 {
   border: 1px solid var(--rose-400);
   border-radius: 50%;
 }
+
+/* Order Total */
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.4rem 0;
+}
+
+.order-total p {
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: var(--rose-900);
+}
+
+.order-total span {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 125%;
+  letter-spacing: 0;
+  color: var(--rose-900);
+}
+
+.carbon-neutral {
+  display: flex;
+  margin-bottom: 2.4rem;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 27.9rem;
+  height: 5.2rem;
+  background-color: var(--rose-50);
+  border-radius: 0.8rem;
+}
+
+.carbon-neutral img {
+  margin-right: 0.4rem;
+}
+
+.confirm-order {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 27.9rem;
+  height: 5.3rem;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: var(--main-white);
+  background-color: var(--main-red);
+  border: none;
+  border-radius: 999rem;
+}
