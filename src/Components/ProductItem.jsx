@@ -20,7 +20,7 @@ export const ProductItem = ({ item }) => {
 
       <img src={`src/${imgURL}`} alt={name} />
 
-      <div className='active-button'>
+      <div className='active-button text-preset-4__semibold'>
         <button
           className='minus'
           onClick={ () => decreaseItem(item)}
@@ -34,9 +34,13 @@ export const ProductItem = ({ item }) => {
         </button>
       </div>
 
-      <span className="category">{ category }</span>
-      <h2>{ name }</h2>
-      <span className="price">{ `$${price}` }</span>
+      <span className="category text-preset-4__regular">
+        { category }
+      </span>
+      <h2 className="text-preset-3">{ name }</h2>
+      <span className="price text-preset-3">
+        { `$${price}` }
+      </span>
 
     </div>
   )

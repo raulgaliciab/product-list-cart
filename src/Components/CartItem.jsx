@@ -9,13 +9,13 @@ export const CartItem = ({ cartItem }) => {
   return (
     <li className="cart-item">
 
-      <div className="cart-item__text-container">
-        <h3>{ cartItem.name }</h3>
+      <div>
+        <h3 className="text-preset-4__regular">{ cartItem.name }</h3>
 
-        <div className="cart-item__number-container">
-          <p className="cart-item__quantity">{ cartItem.quantity }x</p>
-          <p className="cart-item__price">@ ${ cartItem.price }</p>
-          <p className="cart-item__total-price">${ cartItem.price * cartItem.quantity }</p>
+        <div className="number-container">
+          <p className="quantity text-preset-4__semibold">{ cartItem.quantity }x</p>
+          <p className="price text-preset-4__regular">@ ${ cartItem.price }</p>
+          <p className="total-price text-preset-4__semibold">${ cartItem.price * cartItem.quantity }</p>
         </div>
       </div>
 

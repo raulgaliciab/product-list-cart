@@ -9,7 +9,7 @@ export const Cart = () => {
 
   return (
     <section className="cart">
-      <h2>Your Cart ({ cartState.length })</h2>
+      <h2 className="text-preset-2">Your Cart ({ cartState.length })</h2>
 
       {
         ( cartState.length >= 1 )

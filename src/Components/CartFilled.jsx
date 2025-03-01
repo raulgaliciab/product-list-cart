@@ -20,17 +20,17 @@ export const CartFilled = () => {
         }
       </ul>
 
-      <div className='order-total'>
-        <p>Order Total</p>
-        <span>${cartTotal}</span>
+      <div className="order-total">
+        <p className="text-preset-4__regular">Order Total</p>
+        <span className="text-preset-2">${cartTotal}</span>
       </div>
 
-      <div className='carbon-neutral'>
+      <div className="carbon-neutral">
         <img src="src/assets/images/icon-carbon-neutral.svg" alt="Carbon Neutral" />
         <span>This a <b>carbon-neutral</b> delivery</span>
       </div>
 
-      <button className='confirm-order'>
+      <button className="confirm-order text-preset-3">
         Confirm Order
       </button>
     </section>
