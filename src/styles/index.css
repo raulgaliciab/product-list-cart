@@ -106,6 +106,28 @@ h1 {
 
 /* Product Item Button */
 
+.add-to-cart {
+  position: relative;
+  top: -2.2rem;
+  left: calc(50% - 8rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: 4.4rem;
+  color: var(--rose-900);
+  background-color: var(--main-white);
+  border: 1px solid var(--rose-400);
+  border-radius: 999rem;
+  cursor: pointer;
+}
+
+.add-to-cart img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.8rem;
+}
+
 .active-button {
   position: relative;
   top: -2.2rem;

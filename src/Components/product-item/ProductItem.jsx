@@ -1,5 +1,7 @@
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
+import { CounterButton } from './CounterButton';
+import { AddToCart } from './AddtoCart';
 
 /* eslint-disable react/prop-types */
 export const ProductItem = ({ item }) => {
@@ -8,7 +10,7 @@ export const ProductItem = ({ item }) => {
   const imgURL = image.mobile;
 
   // Cart Context
-  const { cartState, increaseItem, decreaseItem } = useContext(CartContext);
+  const { cartState } = useContext(CartContext);
 
   // Item quantity in Cart
   const cartItem = cartState.find( (element) => element.id === item.id );
@@ -20,19 +22,12 @@ export const ProductItem = ({ item }) => {
 
       <img src={`src/${imgURL}`} alt={name} />
 
-      <div className='active-button text-preset-4__semibold'>
-        <button
-          className='minus'
-          onClick={ () => decreaseItem(item)}
-        >
-        </button>
-        <span>{ itemQuantity }</span>
-        <button
-          className='plus'
-          onClick={ () => increaseItem(item) }
-        >
-        </button>
-      </div>
+      {/* Button */}
+      {
+        ( itemQuantity >= 1 )
+          ? <CounterButton item={ item } />
+          : <AddToCart item={ item }/>
+      }
 
       <span className="category text-preset-4__regular">
         { category }
