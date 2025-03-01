@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-key */
 import data from '../assets/data.json';
 import { CartProvider } from '../context/CartProvider';
-import { Cart } from './Cart';
-import { ProductItem } from './ProductItem';
+import { Cart } from './cart/Cart';
+import { ProductItem } from './product-item/ProductItem';
 
 export const App = () => {
 

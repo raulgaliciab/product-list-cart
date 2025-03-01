@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { CartContext } from '../context/CartContext';
+import { CartContext } from '../../context/CartContext';
 
 /* eslint-disable react/prop-types */
 export const ProductItem = ({ item }) => {
@@ -26,7 +26,7 @@ export const ProductItem = ({ item }) => {
           onClick={ () => decreaseItem(item)}
         >
         </button>
-        <span>{itemQuantity}</span>
+        <span>{ itemQuantity }</span>
         <button
           className='plus'
           onClick={ () => increaseItem(item) }
