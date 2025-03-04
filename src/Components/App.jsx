@@ -1,30 +1,36 @@
-/* eslint-disable react/jsx-key */
 import data from '../assets/data.json';
 import { CartProvider } from '../context/CartProvider';
+import { ModalProvider } from '../context/ModalProvider';
 import { Cart } from './cart/Cart';
 import { ProductItem } from './product-item/ProductItem';
+import { ModalRender } from './modal/ModalRender';
 
 export const App = () => {
 
-
   return (
-    <CartProvider>
-      <main>
-        <h1>Desserts</h1>
+    <ModalProvider>
+      <CartProvider>
+        <main>
 
-        <Cart />
+          <ModalRender/>
 
-        <section className='items-container'>
-          {
-            data.map( item => (
-              <ProductItem
-                key={ item.id }
-                item={ item }
-              />
-            ))
-          }
-        </section>
-      </main>
-    </CartProvider>
+          <h1>Desserts</h1>
+
+          <Cart />
+
+          <section className='items-container'>
+            {
+              data.map( item => (
+                <ProductItem
+                  key={ item.id }
+                  item={ item }
+                />
+              ))
+            }
+          </section>
+
+        </main>
+      </CartProvider>
+    </ModalProvider>
   )
 }

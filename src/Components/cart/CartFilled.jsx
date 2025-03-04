@@ -2,10 +2,12 @@ import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { CartItem } from './CartItem';
 import { OrderTotal } from '../OrderTotal';
+import { ModalContext } from '../../context/ModalContext';
 
 export const CartFilled = () => {
 
   const { cartState } = useContext(CartContext);
+  const { toggleModal } = useContext(ModalContext);
 
   return (
     <section>
@@ -27,7 +29,10 @@ export const CartFilled = () => {
         <span>This a <b>carbon-neutral</b> delivery</span>
       </div>
 
-      <button className="confirm-order text-preset-3">
+      <button
+        onClick={ () => toggleModal() }
+        className="confirm-order text-preset-3"
+      >
         Confirm Order
       </button>
     </section>
