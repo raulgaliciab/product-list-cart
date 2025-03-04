@@ -9,8 +9,13 @@ import { OrderTotal } from '../OrderTotal';
 
 export const CheckOutModal = () => {
 
-  const { cartState } = useContext(CartContext);
+  const { cartState, clearCart } = useContext(CartContext);
   const { toggleModal } = useContext(ModalContext);
+
+  const handleClick = () => {
+    clearCart();
+    toggleModal();
+  }
 
   return (
     <section>
@@ -31,7 +36,7 @@ export const CheckOutModal = () => {
 
     <OrderTotal/>
 
-    <button onClick={ toggleModal }>
+    <button onClick={ handleClick }>
       Start New Order
     </button>
 
