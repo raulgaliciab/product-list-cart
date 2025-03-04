@@ -1,11 +1,11 @@
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { CartItem } from './CartItem';
+import { OrderTotal } from '../OrderTotal';
 
 export const CartFilled = () => {
 
   const { cartState } = useContext(CartContext);
-  const cartTotal = cartState.reduce( (acc, item) => acc + item.price * item.quantity, 0 ).toFixed(2);
 
   return (
     <section>
@@ -20,10 +20,7 @@ export const CartFilled = () => {
         }
       </ul>
 
-      <div className="order-total">
-        <p className="text-preset-4__regular">Order Total</p>
-        <span className="text-preset-2">${cartTotal}</span>
-      </div>
+      <OrderTotal/>
 
       <div className="carbon-neutral">
         <img src="src/assets/images/icon-carbon-neutral.svg" alt="Carbon Neutral" />
