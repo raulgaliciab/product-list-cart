@@ -18,28 +18,33 @@ export const CheckOutModal = () => {
   }
 
   return (
-    <section>
-      <img src="src/assets/images/icon-order-confirmed.svg" alt="" />
-      <h1>Order Confirmed</h1>
-      <p>We hope you enjoy your food!</p>
+    <div className="modal-page">
+      <section className="modal-container">
+        <img src="src/assets/images/icon-order-confirmed.svg" alt="" />
+        <h1 className="text-preset-1">Order Confirmed</h1>
+        <p className='modal-subtitle'>We hope you enjoy your food!</p>
 
-    <ul>
-      {
-        cartState.map( item => (
-          <ModalItem
-            key={item.id}
-            cartItem={item}
-          />
-        ))
-      }
-    </ul>
+      <ul>
+        {
+          cartState.map( item => (
+            <ModalItem
+              key={item.id}
+              cartItem={item}
+            />
+          ))
+        }
+      </ul>
 
-    <OrderTotal/>
+      <OrderTotal/>
 
-    <button onClick={ handleClick }>
-      Start New Order
-    </button>
+      <button
+        onClick={ handleClick }
+        className="text-preset-3"
+      >
+        Start New Order
+      </button>
 
-    </section>
+      </section>
+    </div>
   )
 }
