@@ -33,9 +33,11 @@ export const CheckOutModal = () => {
             />
           ))
         }
-      </ul>
 
       <OrderTotal/>
+
+      </ul>
+
 
       <button
         onClick={ handleClick }

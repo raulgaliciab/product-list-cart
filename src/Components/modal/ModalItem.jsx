@@ -2,14 +2,16 @@
 export const ModalItem = ({ cartItem }) => {
 
   return (
-    <li>
+    <li className="modal-item">
       <img src={`src/${cartItem.image.thumbnail}`} alt={cartItem.name} />
-      <div>
-        <h3>{ cartItem.name }</h3>
-        <p>{ cartItem.quantity }x</p>
-        <p>@ ${ cartItem.price }</p>
+      <div className="modal-item__text">
+        <h3 className="text-preset-4__semibold">{ cartItem.name }</h3>
+        <div>
+          <p className="modal-item__quantity text-preset-4__semibold">{ cartItem.quantity }x</p>
+          <p className="modal-item__price text-preset-4__regular">@ ${ cartItem.price.toFixed(2) }</p>
+        </div>
       </div>
-      <p>${ cartItem.price * cartItem.quantity }</p>
+      <p className="modal-item__total-price text-preset-3">${ (cartItem.price * cartItem.quantity).toFixed(2) }</p>
     </li>
   )
 }

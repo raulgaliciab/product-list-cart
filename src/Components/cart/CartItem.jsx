@@ -14,8 +14,8 @@ export const CartItem = ({ cartItem }) => {
 
         <div className="number-container">
           <p className="quantity text-preset-4__semibold">{ cartItem.quantity }x</p>
-          <p className="price text-preset-4__regular">@ ${ cartItem.price }</p>
-          <p className="total-price text-preset-4__semibold">${ cartItem.price * cartItem.quantity }</p>
+          <p className="price text-preset-4__regular">@ ${ cartItem.price.toFixed(2) }</p>
+          <p className="total-price text-preset-4__semibold">${ (cartItem.price * cartItem.quantity).toFixed(2) }</p>
         </div>
       </div>
 

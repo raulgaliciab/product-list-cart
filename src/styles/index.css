@@ -311,15 +311,19 @@ h1 {
 }
 
 .modal-subtitle {
-  margin-bottom: 3.2rem;
   font-size: 1.6rem;
   color: var(--rose-500);
 }
 
 .modal-container ul {
+  margin: 3.2rem 0;
   padding: 2.4rem;
   background-color: var(--rose-50);
   border-radius: 0.8rem;
+}
+
+.modal-container ul .order-total {
+  margin-bottom: 0;
 }
 
 .modal-container button {
@@ -330,4 +334,42 @@ h1 {
   background-color: var(--main-red);
   border: none;
   border-radius: 999rem;
+}
+
+/* Modal Item */
+
+.modal-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--rose-100);
+  list-style: none;
+}
+
+.modal-item:nth-child(1) {
+  padding-top: 0;
+} 
+
+.modal-item__text div {
+  display: flex;
+}
+
+.modal-item img {
+  margin: 0 1.6rem 0 0;
+  border-radius: 0.4rem;
+}
+
+.modal-item__quantity {
+  margin-right: 0.8rem;
+  color: var(--main-red);
+}
+
+.modal-item__price {
+  color: var(--rose-500);
+}
+
+.modal-item__total-price {
+  margin-left: auto;
+  color: var(--rose-900);
 }
