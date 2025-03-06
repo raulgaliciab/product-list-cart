@@ -7,7 +7,6 @@ import { AddToCart } from './AddtoCart';
 export const ProductItem = ({ item }) => {
 
   const { image, category, name, price } = item;
-  const imgURL = image.mobile;
 
   // Cart Context
   const { cartState } = useContext(CartContext);
@@ -20,7 +19,15 @@ export const ProductItem = ({ item }) => {
 
     <div className="product-item">
 
-      <img src={`src/${imgURL}`} alt={name} />
+      <picture>
+        <source srcSet={`src/${image.desktop}`} media="(min-width: 1024px)" />
+        <source srcSet={`src/${image.tablet}`} media="(min-width: 712px)" />
+        <img
+          className="product-img"
+          src={`src/${image.mobile}`}
+          alt={name}
+        />
+      </picture>
 
       {/* Button */}
       {

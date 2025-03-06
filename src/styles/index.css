@@ -86,8 +86,8 @@ h1 {
   margin-bottom: 2.4rem;
 }
 
-.product-item img {
-  object-fit: contain;
+.product-item .product-img {
+  object-fit: cover;
   width: 100%;
   border-radius: 0.8rem;
 }
@@ -260,7 +260,7 @@ h1 {
   justify-self: center;
   justify-content: center;
   align-items: center;
-  width: 27.9rem;
+  width: 100%;
   height: 5.2rem;
   background-color: var(--rose-50);
   border-radius: 0.8rem;
@@ -275,7 +275,7 @@ h1 {
   justify-self: center;
   justify-content: center;
   align-items: center;
-  width: 27.9rem;
+  width: 100%;
   height: 5.3rem;
   color: var(--main-white);
   background-color: var(--main-red);
@@ -299,6 +299,7 @@ h1 {
 .modal-container {
   padding: 4rem 2.4rem 2.4rem 2.4rem;
   background-color: var(--main-white);
+  border-radius: 1.2rem;
 }
 
 .modal-container img {
@@ -350,7 +351,7 @@ h1 {
 
 .modal-item:nth-child(1) {
   padding-top: 0;
-} 
+}
 
 .modal-item__text div {
   display: flex;
@@ -373,4 +374,9 @@ h1 {
 .modal-item__total-price {
   margin-left: auto;
   color: var(--rose-900);
+}
+
+.body-no-scroll {
+  overflow: hidden;
+  height: 100vh;
 }

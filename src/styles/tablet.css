@@ -1,0 +1,31 @@
+@media (min-width: 712px) {
+
+  .items-container {
+    display: grid;
+    column-gap: 2.4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .product-item {
+    min-width: 21.3rem;
+  }
+
+  .product-item .product-img {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    min-height: 21.2rem;
+  }
+
+  /* Modal */
+
+  .modal-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .modal-container {
+    width: 80%;
+  }
+}

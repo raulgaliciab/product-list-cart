@@ -7,7 +7,17 @@ export const ModalProvider = ({ children }) => {
   const [ modalState, setModalState ] = useState(false);
 
   const toggleModal = () => {
-    setModalState(!modalState);
+    setModalState( (prev) => {
+      const newState = !prev;
+
+      if (newState) {
+        document.body.classList.add("body-no-scroll");
+      } else {
+        document.body.classList.remove("body-no-scroll");
+      }
+
+      return newState;
+    });
   }
 
   return (
