@@ -2,6 +2,7 @@
 
 :root {
   --main-red: #C73B0F;
+  --main-red-darker: #9E2E0C;
   --main-green: #1EA575;
   --main-black: #000000;
   --main-white: #FFFFFF;
@@ -120,6 +121,9 @@ main h1 {
   border: 1px solid var(--rose-400);
   border-radius: 999rem;
   cursor: pointer;
+  transition:
+      color 0.5s ease-in-out,
+      border 0.5s ease-in-out;
 }
 
 .add-to-cart img {
@@ -159,10 +163,12 @@ main h1 {
 
 .minus {
   background-image: url('../assets/images/icon-decrement-quantity.svg');
+  transition: background-color 0.5s ease-in-out;
 }
 
 .plus {
   background-image: url('../assets/images/icon-increment-quantity.svg');
+  transition: background-color 0.5s ease-in-out;
 }
 
 /* Cart */
@@ -270,6 +276,8 @@ main h1 {
   margin-right: 0.4rem;
 }
 
+/* Cart Button */
+
 .confirm-order {
   display: flex;
   justify-self: center;
@@ -281,6 +289,8 @@ main h1 {
   background-color: var(--main-red);
   border: none;
   border-radius: 999rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
 }
 
 /* Modal */
@@ -336,6 +346,8 @@ main h1 {
   background-color: var(--main-red);
   border: none;
   border-radius: 999rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
 }
 
 /* Modal Item */
@@ -379,4 +391,23 @@ main h1 {
 .body-no-scroll {
   overflow: hidden;
   height: 100vh;
+}
+
+/* Pseudo classes */
+
+.add-to-cart:hover {
+  color: var(--main-red);
+  border: 1px solid var(--main-red);
+}
+
+.minus:hover, .plus:hover {
+  background-color: var(--main-red-darker);
+}
+
+.confirm-order:hover {
+  background-color: var(--main-red-darker);
+}
+
+.modal-container button:hover {
+  background-color: var(--main-red-darker);
 }
