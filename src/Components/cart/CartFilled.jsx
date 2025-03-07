@@ -10,7 +10,7 @@ export const CartFilled = () => {
   const { toggleModal } = useContext(ModalContext);
 
   return (
-    <section>
+    <section className="animate__animated animate__fadeIn">
       <ul>
         {
           cartState.map( (cartItem) => (

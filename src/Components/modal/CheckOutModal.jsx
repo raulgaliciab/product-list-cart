@@ -19,8 +19,8 @@ export const CheckOutModal = () => {
 
   return (
     <div className="modal-page">
-      <section className="modal-container">
-        <img src="src/assets/images/icon-order-confirmed.svg" alt="" />
+      <section className="modal-container animate__animated animate__slideInUp">
+        <img src="src/assets/images/icon-order-confirmed.svg" alt="Order confirmed" />
         <h1 className="text-preset-1">Order Confirmed</h1>
         <p className='modal-subtitle'>We hope you enjoy your food!</p>
 
