@@ -1,0 +1,30 @@
+@media (min-width: 1024px) {
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header cart"
+      "items items cart";
+    column-gap: 3.2rem;
+    padding: 8.8rem;
+  }
+
+  main h1 {
+    grid-area: header;
+  }
+
+  .items-container {
+    max-width: 80rem;
+    grid-area: items;
+  }
+
+  .cart {
+    grid-area: cart;
+    align-self: start;
+  }
+
+  .modal-container {
+    width: 40%;
+  }
+}
