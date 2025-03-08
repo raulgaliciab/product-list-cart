@@ -25,7 +25,7 @@ export const CartFilled = () => {
       <OrderTotal/>
 
       <div className="carbon-neutral">
-        <img src="src/assets/images/icon-carbon-neutral.svg" alt="Carbon Neutral" />
+        <img src="assets/images/icon-carbon-neutral.svg" alt="Carbon Neutral" />
         <span>This a <b>carbon-neutral</b> delivery</span>
       </div>
 

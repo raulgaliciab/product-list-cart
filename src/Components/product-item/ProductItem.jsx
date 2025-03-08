@@ -20,11 +20,11 @@ export const ProductItem = ({ item }) => {
     <div className="product-item">
 
       <picture>
-        <source srcSet={`src/${image.desktop}`} media="(min-width: 1024px)" />
-        <source srcSet={`src/${image.tablet}`} media="(min-width: 712px)" />
+        <source srcSet={image.desktop} media="(min-width: 1024px)" />
+        <source srcSet={image.tablet} media="(min-width: 712px)" />
         <img
           className="product-img"
-          src={`src/${image.mobile}`}
+          src={image.mobile}
           alt={name}
         />
       </picture>

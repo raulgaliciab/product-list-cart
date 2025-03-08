@@ -3,7 +3,7 @@ export const ModalItem = ({ cartItem }) => {
 
   return (
     <li className="modal-item">
-      <img src={`src/${cartItem.image.thumbnail}`} alt={cartItem.name} />
+      <img src={cartItem.image.thumbnail} alt={cartItem.name} />
       <div className="modal-item__text">
         <h3 className="text-preset-4__semibold">{ cartItem.name }</h3>
         <div>
