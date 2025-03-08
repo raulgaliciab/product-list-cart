@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { CounterButton } from './CounterButton';
-import { AddToCart } from './AddtoCart';
+import { AddToCart } from './AddToCart';
 
 /* eslint-disable react/prop-types */
 export const ProductItem = ({ item }) => {
