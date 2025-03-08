@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { ModalContext } from '../../context/ModalContext';
 
-import { ModalItem } from './ModalITem';
+import { ModalItem } from './ModalItem';
 import { OrderTotal } from '../OrderTotal';
 
 
