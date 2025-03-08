@@ -11,7 +11,7 @@ export const AddToCart = ({ item }) => {
       onClick={ () => increaseItem(item)}
       className="add-to-cart text-preset-4__semibold"
     >
-      <img src="assets/images/icon-add-to-cart.svg" alt="Add to Cart" />
+      <img src="assets/images/icon-add-to-cart.svg" alt="Cart Icon" />
       <span>Add to Cart</span>
     </button>
   )

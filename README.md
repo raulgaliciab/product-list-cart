@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub repository](https://github.com/raulgaliciab/product-list-cart)
-- Live Site URL: [Vercel](https://products-cart-git-main-raulgaliciabs-projects.vercel.app/)
+- Live Site URL: [Vercel](https://products-cart-gamma.vercel.app/)
 
 ## My process
 
